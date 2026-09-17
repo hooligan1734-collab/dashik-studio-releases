@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Политика конфиденциальности — Dashik Studio</title>
+<style>
+  body { font-family: -apple-system, Segoe UI, Roboto, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #222; }
+  h1 { font-size: 1.6em; }
+  h2 { font-size: 1.2em; margin-top: 1.8em; }
+  code { background: #f2f2f2; padding: 2px 5px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<h1>Политика конфиденциальности Dashik Studio</h1>
+<p>Дата последнего обновления: 17 сентября 2026 г.</p>
+
+<p>Dashik Studio — desktop-приложение для создания коротких видео, работающее локально на компьютере
+пользователя. Эта страница описывает, как приложение обрабатывает данные, полученные через Google
+API (YouTube Data API и YouTube Analytics API), когда пользователь по своей инициативе подключает
+собственный YouTube-канал.</p>
+
+<h2>Какие данные запрашиваются</h2>
+<p>После явного согласия пользователя на экране входа Google приложение получает доступ к:</p>
+<ul>
+  <li>базовой информации о канале пользователя (название, ID, список загруженных видео);</li>
+  <li>возможности загружать видео и обложки на канал пользователя от его имени;</li>
+  <li>статистике по видео пользователя (просмотры, удержание, источники трафика) через YouTube Analytics API.</li>
+</ul>
+<p>Приложение не запрашивает и не получает доступ к данным других пользователей YouTube, только к
+каналу, который сам пользователь подключил в настройках приложения.</p>
+
+<h2>Как данные используются</h2>
+<p>Все полученные данные используются исключительно внутри приложения, на устройстве пользователя, для
+отображения статистики канала и публикации видео, которые пользователь сам создал в приложении.
+Приложение не анализирует, не продаёт и не передаёт эти данные каким-либо третьим лицам, рекламным
+сетям или аналитическим сервисам.</p>
+
+<h2>Где хранятся данные</h2>
+<p>Токен доступа (OAuth refresh token) хранится локально на компьютере пользователя, в папке профиля
+приложения (<code>userData/youtube-tokens.json</code>). Он не передаётся и не синхронизируется ни на
+какой сервер разработчика — у Dashik Studio нет собственного backend-сервера, приложение обращается к
+API Google напрямую с устройства пользователя.</p>
+
+<h2>Отзыв доступа</h2>
+<p>Пользователь может в любой момент отключить доступ приложения к своему аккаунту:</p>
+<ul>
+  <li>кнопкой «Отключить аккаунт» в настройках Dashik Studio — удаляет локально сохранённый токен;</li>
+  <li>либо через страницу <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Google Account → Security → Third-party apps with account access</a> — отзывает доступ на стороне Google.</li>
+</ul>
+
+<h2>Соответствие политике Google</h2>
+<p>Использование и передача информации, полученной через API Google, приложением Dashik Studio
+соответствует
+<a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>,
+включая требования Limited Use.</p>
+
+<h2>Контакты</h2>
+<p>По вопросам, связанным с этой политикой или обработкой данных, можно написать на
+<a href="mailto:pkashnikbaraholshik@gmail.com">pkashnikbaraholshik@gmail.com</a>.</p>
+</body>
+</html>
